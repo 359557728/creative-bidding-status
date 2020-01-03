@@ -20,7 +20,7 @@ pool = HTTPConnectionPool(reactor)
 
 @application.route('/')
 def gdtBiddingFailReason(request):
-    deferred = treq.post(BIDDING_FAIL_URL, data = {"start_date": now, "end_date", now}, headers = {"Content-Type": "application/json", "Authorization": "Bearer NTYyMzM4LDE0MzE5MzY5ODIsMGQzMWUyYTRjNmY1ZjEzZDdmY2ZmODVjYjU4YTQ0ZTY="}, pool=pool)
+    deferred = treq.post(BIDDING_FAIL_URL, data = {"start_date": now, "end_date": now}, headers = {"Content-Type": "application/json", "Authorization": "Bearer NTYyMzM4LDE0MzE5MzY5ODIsMGQzMWUyYTRjNmY1ZjEzZDdmY2ZmODVjYjU4YTQ0ZTY="}, pool=pool)
     deferred.addCallback(request_done)
     return deferred
 
