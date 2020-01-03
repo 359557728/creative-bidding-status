@@ -23,3 +23,6 @@
 22  DSP 点击地址超长
 23  曝光次数到达广告主侧要求的频次上限
 24  优先级低于 PMP 广告
+
+
+docker run -d --restart=always --name creative-status -p 18075:18075 creative-status
