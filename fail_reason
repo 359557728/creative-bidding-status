@@ -25,4 +25,4 @@
 24  优先级低于 PMP 广告
 
 
-docker run -d --restart=always --name creative-status -p 18075:18075 creative-status
+docker run -e TZ="Asia/Shanghai" -d --restart=always --name creative-status -p 18075:18075 creative-status
